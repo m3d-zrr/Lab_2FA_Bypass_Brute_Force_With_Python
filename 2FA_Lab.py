@@ -216,7 +216,7 @@ if __name__ == "__main__":
     else:
         url, ur = urlAdapter(arg)
         indices = range(10000)
-        iterations = random.sample(indices, len(indices))   # For random indices
+        #iterations = random.sample(indices, len(indices))   # For random indices
         iterations = indices
         main(url, ur, iterations)
     
