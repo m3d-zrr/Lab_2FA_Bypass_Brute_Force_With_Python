@@ -130,7 +130,7 @@ def iterate(i, url, ur):
         response_soup = BeautifulSoup(response1.text, 'html.parser')
         csrf_input = response_soup.find('input', {'name': 'csrf'})
         if csrf_input:
-                csrf_token = csrf_input['value']
+            csrf_token = csrf_input['value']
         else:
             print('CSRF not found in response.')
         session_cookie = response1.cookies.get('session')
